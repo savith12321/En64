@@ -3,7 +3,7 @@ const encode = require("./encode");
 const decode = require("./decode");
 
 const app = express();
-const port = process.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
