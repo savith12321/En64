@@ -28,7 +28,7 @@
     </center>
     <script>
         const encode = () =>{
-            var url = `http://localhost:3000/api/encode?query=${document.getElementById("encode").value}`;
+            var url = `/api/encode?query=${document.getElementById("encode").value}`;
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
@@ -38,7 +38,7 @@
                 .catch(err => console.error(err));            
         }
         const decode = () =>{
-            var url = `http://localhost:3000/api/decode?query=${document.getElementById("decode").value}`;
+            var url = `/api/decode?query=${document.getElementById("decode").value}`;
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
